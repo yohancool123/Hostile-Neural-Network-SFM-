@@ -7,7 +7,7 @@ end
 
 every 20 ticks do
     input prediction_matrix from "Me Network"
-    output 2 to each "S1","S2","S3","S4","S5","S6","S7","S8","S9","S10","S11","S12","S13","S14","S15","S16" ROUND ROBIN BY LABEL
+    output 2 to each "S1","S2","S3","S4","S5","S6","S7","S8","S9","S10","S11","S12","S13","S14","S15","S16"
     forget
 
     input from "S1","S2","S3","S4","S5","S6","S7","S8","S9","S10","S11","S12","S13","S14","S15","S16" slots 2
