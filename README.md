@@ -2,7 +2,7 @@ name "Hostile Neural Network"
 
 every 20 ticks do
     input fe:: from "Power" top side
-    output fe:: to "S1","S2","S3","S4","S5","S6","S7","S8","S9","S10","S11","S12","S13","S14","S15","S16"
+    output fe:: to "S1","S2","S3","S4","S5","S6","S7","S8","S9","S10","S11","S12","S13","S14","S15","S16","F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12","F13","F14","F15","F16"
 end
 
 every 20 ticks do
@@ -77,4 +77,8 @@ every 20 ticks do
     input hostilenetworks:prediction from "S16"
     output to "F16"
     forget
+
+    input from "F1","F2","F3","F4","F5","F6","F7","F8","F9","F10","F11","F12","F13","F14","F15","F16"
+    output to "Me Network"
 end
+
